@@ -11,7 +11,6 @@ public interface VerificationTokenMappingHelper {
 		return VerificationTokenDto.builder()
 				.verificationTokenId(verificationToken.getVerificationTokenId())
 				.token(verificationToken.getToken())
-				.expireDate(verificationToken.getExpireDate())
 				.credentialDto(
 						CredentialDto.builder()
 							.credentialId(verificationToken.getCredential().getCredentialId())
@@ -30,7 +29,6 @@ public interface VerificationTokenMappingHelper {
 		return VerificationToken.builder()
 				.verificationTokenId(verificationTokenDto.getVerificationTokenId())
 				.token(verificationTokenDto.getToken())
-				.expireDate(verificationTokenDto.getExpireDate())
 				.credential(
 						Credential.builder()
 							.credentialId(verificationTokenDto.getCredentialDto().getCredentialId())

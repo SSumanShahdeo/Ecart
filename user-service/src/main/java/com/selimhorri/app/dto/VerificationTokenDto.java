@@ -28,11 +28,11 @@ public class VerificationTokenDto implements Serializable {
 	private Integer verificationTokenId;
 	
 	private String token;
-	
-	@JsonFormat(pattern = AppConstant.LOCAL_DATE_FORMAT, shape = Shape.STRING)
-	@DateTimeFormat(pattern = AppConstant.LOCAL_DATE_FORMAT)
-	private LocalDate expireDate;
-	
+
+//	@JsonFormat(pattern = "yyyy-MM-dd")
+//	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+//	private LocalDate expireDate;
+
 	@JsonProperty("credential")
 	@JsonInclude(value = Include.NON_NULL)
 	private CredentialDto credentialDto;

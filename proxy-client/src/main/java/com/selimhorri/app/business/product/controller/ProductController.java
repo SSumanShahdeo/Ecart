@@ -25,6 +25,7 @@ public class ProductController {
 	
 	@GetMapping
 	public ResponseEntity<ProductProductServiceCollectionDtoResponse> findAll() {
+		System.out.println("\n\n\nHere\n\n\n");
 		return ResponseEntity.ok(this.productClientService.findAll().getBody());
 	}
 	

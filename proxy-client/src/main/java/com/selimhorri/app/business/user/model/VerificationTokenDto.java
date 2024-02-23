@@ -25,9 +25,9 @@ public class VerificationTokenDto {
 	private Integer verificationTokenId;
 	private String token;
 	
-	@JsonFormat(pattern = AppConstant.LOCAL_DATE_FORMAT, shape = Shape.STRING)
-	@DateTimeFormat(pattern = AppConstant.LOCAL_DATE_FORMAT)
-	private LocalDate expireDate;
+//	@JsonFormat(pattern = AppConstant.LOCAL_DATE_FORMAT, shape = Shape.STRING)
+//	@DateTimeFormat(pattern = AppConstant.LOCAL_DATE_FORMAT)
+//	private LocalDate expireDate;
 	
 	@JsonProperty("credential")
 	@JsonInclude(value = Include.NON_NULL)
